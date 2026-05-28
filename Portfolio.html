@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio – Amir Haziq | BUT R&T</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav>
+  <a class="nav-logo" href="#" onclick="showPage('home'); return false;">
+    <span class="nav-star">✦</span> Amir Haziq
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><button onclick="showPage('home')"       data-page="home">Accueil</button></li>
+    <li><button onclick="showPage('apropos')"    data-page="apropos">À propos</button></li>
+    <li><button onclick="showPage('projets')"    data-page="projets">Projets</button></li>
+    <li><button onclick="showPage('competences')" data-page="competences">Compétences</button></li>
+    <li><button onclick="showPage('experiences')" data-page="experiences">Expériences</button></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem;">
+    <div class="nav-dots" id="navDots">
+      <div class="dot active" onclick="showPage('home')"        title="Accueil"></div>
+      <div class="dot"        onclick="showPage('apropos')"     title="À propos"></div>
+      <div class="dot"        onclick="showPage('projets')"     title="Projets"></div>
+      <div class="dot"        onclick="showPage('competences')" title="Compétences"></div>
+      <div class="dot"        onclick="showPage('experiences')" title="Expériences"></div>
+    </div>
+    <button class="nav-cta-btn" onclick="focusFooterEmail()">Me contacter !</button>
+  </div>
+</nav>
+
+<!-- ══════════════ PAGES ══════════════ -->
+<div class="pages-wrap">
+
+  <!-- ╔══════════════╗
+       ║  1 — HOME   ║
+       ╚══════════════╝ -->
+  <div class="page active" id="p-home">
+    <div class="page-inner">
+      <div class="bg-word" style="bottom:0;right:-1%;">PORTFOLIO</div>
+      <div class="sparkle sp1" aria-hidden="true">✦</div>
+      <div class="sparkle sp2" aria-hidden="true">◆</div>
+
+      <div class="hero-layout">
+        <div>
+          <div class="eyebrow">BUT1 Réseaux &amp; Télécommunications · IUT Nice</div>
+          <h1 class="hero-h1">
+            <span class="hero-outline">PORTFOLIO</span>
+            <span>Muhammad Amir Haziq<br><em>BIN ZAKKI</em></span>
+          </h1>
+          <p class="hero-desc">
+            Étudiant en 1ère année de BUT Réseaux & Télécommunications à l’IUT Nice Côte d’Azur et originaire de Malaisie, je suis passionné par les réseaux, la cybersécurité et le développement informatique.<br>
+            Ici, vous trouverez mes projets, mes compétences, mes passions ainsi que davantage d’informations sur mon parcours. N’hésitez pas à me contacter !
+          </p>
+          <div class="hero-social">
+            <span><strong>GH :</strong> -</span>
+            <span href="www.linkedin.com/in/muhammad-amir-haziq-bin-zakki-6a9a522b0"><strong>LI :</strong> Muhammad Amir Haziq Bin Zakki</span>
+            <span><strong>✉ :</strong> remyhaz060425@gmail.com</span>
+          </div>
+          <div class="hero-ctas">
+            <button class="btn btn-terra" onclick="showPage('apropos')">Découvrir mon profil →</button>
+            <button class="btn btn-outline" onclick="showPage('projets')">Voir mes projets</button>
+          </div>
+        </div>
+
+        <div style="position:relative;">
+          <div class="hero-photo">
+            <span class="hf-badge hf1">BUT R&amp;T · 2025</span>
+            <img src="me.jpg" alt="Photo de profil" class="profile-photo">
+            <span class="hf-badge hf2">Malaisien</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ╔══════════════╗
+       ║  2 — APROPOS║
+       ╚══════════════╝ -->
+  <div class="page" id="p-apropos">
+    <div class="page-inner">
+      <div class="bg-word" style="bottom:2%;right:-2%;">ABOUT</div>
+
+      <div class="eyebrow">Qui suis-je ?</div>
+      <div class="apropos-layout">
+        <div>
+          <h2 class="hello-title">Hello,<br>Je suis<br><em>Amir Haziq</em></h2>
+          <div class="apropos-text">
+            <p>Originaire de Malaisie, j’ai d’abord suivi une année de programme préparatoire dans mon pays afin de renforcer mes connaissances académiques et de mieux définir mon projet d’études. En 2025, j’ai choisi de poursuivre mon parcours en France en intégrant le BUT Réseaux et Télécommunications à l’IUT Nice Côte d’Azur, un domaine qui correspond pleinement à mes centres d’intérêt. </p>
+            <p>Au cours de ma formation, je développe des compétences en programmation, en administration Linux, en cybersécurité ainsi qu’en configuration et gestion de réseaux. Je m’intéresse également aux technologies web, aux systèmes connectés et aux solutions intelligentes basées sur l’intelligence artificielle. </p>
+            <p>À long terme, je souhaite mettre mes compétences au service de projets innovants liés à l’environnement et aux technologies qui facilitent le quotidien des personnes. J’aimerais également contribuer au développement de solutions intelligentes, durables et sécurisées, en combinant réseaux, cybersécurité et intelligence artificielle afin d’avoir un impact positif sur la société et les générations futures.</p>
+            <p>Mon objectif : m'orienter vers [cybersécurité / développement / administration systèmes].</p>
+          </div>
+          <a href="www.linkedin.com/in/muhammad-amir-haziq-bin-zakki-6a9a522b0" class="linkedin-bar" target="_blank">🔗 ma profil linkedin</a>
+        </div>
+
+        <div>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="ic-icon">🎓</div>
+              <div><div class="ic-label">Formation</div><div class="ic-value">BUT R&amp;T – Sophia Antipolis</div></div>
+            </div>
+            <div class="info-card">
+              <div class="ic-icon">📍</div>
+              <div><div class="ic-label">Localisation</div><div class="ic-value">Nice / Sophia Antipolis</div></div>
+            </div>
+            <div class="info-card">
+              <div class="ic-icon">🌍</div>
+              <div><div class="ic-label">Langues</div><div class="ic-value">Français · Anglais B2</div></div>
+            </div>
+            <div class="info-card">
+              <div class="ic-icon">🔍</div>
+              <div><div class="ic-label">Recherche</div><div class="ic-value">-</div></div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <h3>Contact</h3>
+            <div class="cc-row"><span class="cc-icon">📍</span> Sophia Antipolis, France</div>
+            <div class="cc-row"><span class="cc-icon">✉</span> remyhaz060425@gmail.com</div>
+            <div class="cc-row"><span class="cc-icon">🐙</span> -</div>
+            <div class="cc-row"><span class="cc-icon">💼</span> -</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ╔══════════════╗
+       ║  3 — PROJETS║
+       ╚══════════════╝ -->
+<div class="page" id="p-projets">
+  <div class="page-inner">
+    <div class="bg-word" style="top:0;right:-2%;font-size:clamp(4rem,9vw,8rem);">
+      PROJECTS
+    </div>
+
+    <div class="eyebrow">Réalisations</div>
+    <h2 class="section-title">Mes projets</h2>
+
+    <div class="projects-grid">
+
+      <!-- SAE21 -->
+      <div class="project-card">
+        <div class="project-thumb pt-sage">🌐</div>
+
+        <div class="project-body">
+          <span class="project-badge badge-tech">
+            Technique - SAE21
+          </span>
+
+          <div class="proj-title">
+            Configuration d’un réseau d’entreprise
+          </div>
+
+          <div class="fiche">
+            <div>
+              <div class="fiche-label">🎯 Objectif</div>
+
+              <div class="fiche-value">
+                Concevoir et configurer un réseau d’entreprise
+                sécurisé avec segmentation VLAN et services réseau.
+              </div>
+            </div>
+
+            <div>
+              <div class="fiche-label">⚙️ Actions réalisées</div>
+
+              <ul class="fiche-actions">
+                <li>Création du plan d’adressage IPv4</li>
+                <li>Configuration des VLANs et routage inter-VLAN</li>
+                <li>Mise en place du serveur DHCP</li>
+                <li>Tests de connectivité et dépannage réseau</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="fiche-label">🛠️ Technos</div>
+
+              <div class="fiche-tags">
+                <span class="tag">Cisco Packet Tracer</span>
+                <span class="tag">VLAN</span>
+                <span class="tag">DHCP</span>
+                <span class="tag">IPv4</span>
+              </div>
+            </div>
+
+            <div class="fiche-proof">
+              📎 Schéma réseau + rapport PDF · <a href="#">Voir →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- R111 -->
+      <div class="project-card">
+        <div class="project-thumb pt-terra">🌍</div>
+
+        <div class="project-body">
+          <span class="project-badge badge-nontech">
+            Non Technique - R111
+          </span>
+
+          <div class="proj-title">
+            Comparaison culturelle France – Malaisie
+          </div>
+
+          <div class="fiche">
+            <div>
+              <div class="fiche-label">🎯 Objectif</div>
+
+              <div class="fiche-value">
+                Présenter les différences culturelles et les habitudes
+                de communication entre la France et la Malaisie dans un
+                contexte universitaire et professionnel.
+              </div>
+            </div>
+
+            <div>
+              <div class="fiche-label">⚙️ Actions réalisées</div>
+
+              <ul class="fiche-actions">
+                <li>Recherche et analyse interculturelle</li>
+                <li>Création d’un support de présentation</li>
+                <li>Présentation orale en français</li>
+                <li>Travail collaboratif et communication professionnelle</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="fiche-label">🛠️ Compétences</div>
+
+              <div class="fiche-tags">
+                <span class="tag">Communication</span>
+                <span class="tag">Travail d’équipe</span>
+                <span class="tag">Présentation orale</span>
+                <span class="tag">Interculturel</span>
+              </div>
+            </div>
+
+            <div class="fiche-proof">
+              📎 Diaporama + présentation orale · <a href="#">Voir →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div class="project-card">
+        <div class="project-thumb pt-rose">📋</div>
+
+        <div class="project-body">
+          <span class="project-badge badge-nontech">
+            Non technique
+          </span>
+
+          <div class="proj-title">
+            [Nom du projet]
+          </div>
+
+          <div class="fiche">
+            <div>
+              <div class="fiche-label">🎯 Objectif</div>
+
+              <div class="fiche-value">
+                [Description du projet]
+              </div>
+            </div>
+
+            <div>
+              <div class="fiche-label">⚙️ Actions réalisées</div>
+
+              <ul class="fiche-actions">
+                <li>[Action 1]</li>
+                <li>[Action 2]</li>
+                <li>[Action 3]</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="fiche-label">🛠️ Compétences</div>
+
+              <div class="fiche-tags">
+                <span class="tag">Communication</span>
+                <span class="tag">Rédaction</span>
+                <span class="tag">Équipe</span>
+              </div>
+            </div>
+
+            <div class="fiche-proof">
+              📎 Rapport PDF · <a href="#">Voir →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+
+    </div>
+  </div>
+</div>
+
+
+   <!--╔════════════════════╗
+       ║  4 — COMPÉTENCES   ║
+       ╚════════════════════╝-->
+  <div class="page" id="p-competences">
+    <!--
+    <div class="page-inner">
+      <div class="bg-word" style="bottom:0;left:-1%;font-size:clamp(5rem,10vw,9rem);">SKILLS</div>
+
+      <div class="eyebrow">Savoir-faire</div>
+      <h2 class="section-title">Compétences</h2>
+
+      <div class="skills-layout">
+        <div class="skill-cat">
+          <div class="skill-cat-hd"><div class="skill-cat-icon">🔌</div><span class="skill-cat-name">Réseaux</span></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">TCP/IP – Routage</span><span class="skill-lv lv-m">Intermédiaire</span></div><div class="skill-bar"><div class="skill-fill f-terra" style="width:55%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">VLAN / Switching</span><span class="skill-lv lv-m">Intermédiaire</span></div><div class="skill-bar"><div class="skill-fill f-terra" style="width:50%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Cisco Packet Tracer</span><span class="skill-lv lv-g">Bon niveau</span></div><div class="skill-bar"><div class="skill-fill f-sage" style="width:65%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Wireshark</span><span class="skill-lv lv-b">Débutant</span></div><div class="skill-bar"><div class="skill-fill f-rose" style="width:35%"></div></div></div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat-hd"><div class="skill-cat-icon">💻</div><span class="skill-cat-name">Développement</span></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">HTML5 / CSS3</span><span class="skill-lv lv-g">Bon niveau</span></div><div class="skill-bar"><div class="skill-fill f-sage" style="width:65%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Python</span><span class="skill-lv lv-m">Intermédiaire</span></div><div class="skill-bar"><div class="skill-fill f-terra" style="width:55%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">JavaScript</span><span class="skill-lv lv-b">Débutant</span></div><div class="skill-bar"><div class="skill-fill f-rose" style="width:40%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Git / GitHub</span><span class="skill-lv lv-b">Débutant</span></div><div class="skill-bar"><div class="skill-fill f-rose" style="width:30%"></div></div></div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat-hd"><div class="skill-cat-icon">🖥️</div><span class="skill-cat-name">Systèmes &amp; Outils</span></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Linux (CLI)</span><span class="skill-lv lv-m">Intermédiaire</span></div><div class="skill-bar"><div class="skill-fill f-terra" style="width:50%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Windows Server</span><span class="skill-lv lv-b">Débutant</span></div><div class="skill-bar"><div class="skill-fill f-rose" style="width:35%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Docker</span><span class="skill-lv lv-b">Débutant</span></div><div class="skill-bar"><div class="skill-fill f-rose" style="width:20%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">VirtualBox / VMware</span><span class="skill-lv lv-m">Intermédiaire</span></div><div class="skill-bar"><div class="skill-fill f-terra" style="width:55%"></div></div></div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat-hd"><div class="skill-cat-icon">🌐</div><span class="skill-cat-name">Soft Skills</span></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Anglais technique</span><span class="skill-lv lv-g">B2</span></div><div class="skill-bar"><div class="skill-fill f-sage" style="width:70%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Travail en équipe</span><span class="skill-lv lv-g">Fort</span></div><div class="skill-bar"><div class="skill-fill f-sage" style="width:80%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Curiosité technique</span><span class="skill-lv lv-g">Fort</span></div><div class="skill-bar"><div class="skill-fill f-sage" style="width:90%"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Communication écrite</span><span class="skill-lv lv-m">Intermédiaire</span></div><div class="skill-bar"><div class="skill-fill f-terra" style="width:60%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="hashtag-row">
+        <span class="hashtag">#Curiosité</span>
+        <span class="hashtag">#Rigueur</span>
+        <span class="hashtag">#Travail-en-équipe</span>
+        <span class="hashtag">#Adaptabilité</span>
+        <span class="hashtag">#Autonomie</span>
+      </div>
+    </div>
+  -->
+  </div>
+
+
+   <!--╔════════════════════╗
+       ║  5 — EXPÉRIENCES   ║
+       ╚════════════════════╝-->
+  <div class="page" id="p-experiences">
+    <!---
+    <div class="page-inner">
+      <div class="bg-word" style="top:0;right:-2%;font-size:clamp(4rem,8vw,7rem);">RESUME</div>
+
+      <div class="eyebrow">Parcours</div>
+      <h2 class="section-title">Expériences</h2>
+
+      <div class="exp-layout">
+        <div>
+          <div class="exp-section-title">Éducation</div>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-date">Sept. 2025 – Aujourd'hui</div>
+              <div class="tl-title">BUT Réseaux &amp; Télécommunications – 1ère année</div>
+              <div class="tl-place">IUT Nice Côte d'Azur – Sophia Antipolis</div>
+              <div class="tl-desc">Réseaux, télécoms, développement, systèmes et communication.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-date">Aout 2024 - Juilliet 2025</div>
+              <div class="tl-title">Programme Preparatoire a la poursuivre d'etudes en france</div>
+              <div class="tl-place">UniKl MFI</div>
+              <div class="tl-desc">-</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-date">Janvier 2019 - Fevrier 2024</div>
+              <div class="tl-title">SPM equivalent BAC </div>
+              <div class="tl-place">MRSM Felda</div>
+              <div class="tl-desc">-</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="exp-box">
+            <div class="exp-section-title">Expérience</div>
+            <div class="exp-item">
+              <span class="exp-year">✦ [Année]</span>
+              <div class="exp-role">[Stage / Mission / Bénévolat]</div>
+              <div class="exp-sub">[Description · [Entreprise] – [Ville]]</div>
+            </div>
+            <div class="exp-item">
+              <span class="exp-year">✦ [Année]</span>
+              <div class="exp-role">[Projet personnel IT]</div>
+              <div class="exp-sub">[Description courte du projet perso]</div>
+            </div>
+            <div class="hashtag-row" style="margin-top:0;">
+              <span class="hashtag">#Créativité</span>
+              <span class="hashtag">#Communication</span>
+              <span class="hashtag">#Détail</span>
+            </div>
+          </div>
+          <div class="cv-strip">
+            <div>
+              <h4>[Prénom Nom] – CV 2025</h4>
+              <p>BUT R&amp;T · IUT Nice · Stage / Alternance en [domaine]</p>
+            </div>
+            <a href="cv.pdf" download class="btn btn-ink" style="flex-shrink:0;">⬇ Mon CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+</div> <!---end .pages-wrap -->
+
+
+<!-- ══════════════════════════════════════
+     CONTACT FOOTER — always visible
+══════════════════════════════════════ -->
+<footer class="contact-footer">
+  <!-- Contact links -->
+  <div class="cf-links">
+    <a href="mailto:remyhaz060425@gmail.com" class="cf-link">
+      <span class="cf-icon">✉</span> remyhaz060425@gmail.com
+    </a>
+    <a href="https://linkedin.com/in/[profil]" class="cf-link" target="_blank">
+      <span class="cf-icon">💼</span> LinkedIn
+    </a>
+    <a href="https://github.com/[pseudo]" class="cf-link" target="_blank">
+      <span class="cf-icon">🐙</span> -
+    </a>
+    <span class="cf-link" style="cursor:default;">
+      <span class="cf-icon">📍</span> IUT Nice Cote d'Azur
+    </span>
+  </div>
+
+  <div class="cf-divider"></div>
+
+  <!-- Quick email form -->
+  <div class="cf-form">
+    <span class="cf-form-label">Message rapide →</span>
+    <input class="cf-input" id="cfEmail" type="email" placeholder="votre@email.com">
+    <input class="cf-msg"   id="cfMsg"   type="text"  placeholder="Votre message…">
+    <button class="cf-btn" onclick="handleFooterSend()">Envoyer ✉</button>
+  </div>
+
+  <!-- Page label -->
+  <div class="cf-page-info">
+    <span class="cf-page-num" id="cfPageNum">01</span>
+    <span class="cf-page-name" id="cfPageName">Accueil</span>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
