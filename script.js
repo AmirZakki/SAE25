@@ -121,7 +121,7 @@ function openModal(project){
   else if(project === 'mfi'){
 
     body.innerHTML = `
-      <img src="smart-cane.jpg" class="modal-img">
+      <img src="canes.jpg" class="modal-img">
 
       <div class="modal-body">
 
