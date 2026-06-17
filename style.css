@@ -520,7 +520,7 @@ nav {
   background: var(--cream); border: 2px solid var(--border);
   border-radius: 16px; overflow: hidden;
   box-shadow: var(--shadow); display: flex; flex-direction: column;
-  transition: transform .2s, box-shadow .2s;
+  transition: transform .2s, 
 }
 .project-card:hover { transform: translate(-3px,-3px); box-shadow: 7px 7px 0 var(--border); }
 .project-thumb {
