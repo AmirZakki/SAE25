@@ -71,3 +71,109 @@ document.addEventListener('keydown', e => {
     if (idx > 0) showPage(PAGES[idx - 1].id);
   }
 });
+
+function openModal(project){
+
+  const modal = document.getElementById('projectModal');
+  const body = document.getElementById('modalBody');
+
+  if(project === 'thales'){
+
+    body.innerHTML = `
+      <img src="thales.jpg" class="modal-img">
+
+      <div class="modal-body">
+
+        <h2>SAÉ – THALES ALENIA SPACE</h2>
+
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>
+            Projet réalisé dans le cadre du BUT Réseaux &
+            Télécommunications en collaboration avec
+            THALES ALENIA SPACE.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <p>
+            Raspberry Pi • Linux • HTML/PHP/CSS • Réseaux • PhpMyAdmin
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Documents</h3>
+
+          <a href="rapport-thales.pdf" class="btn btn-terra">
+            📄 Rapport
+          </a>
+
+          <a href="presentation-thales.pdf" class="btn btn-outline">
+            📊 Présentation
+          </a>
+        </div>
+
+      </div>
+    `;
+  }
+
+  else if(project === 'mfi'){
+
+    body.innerHTML = `
+      <img src="smart-cane.jpg" class="modal-img">
+
+      <div class="modal-body">
+
+        <h2>Projet Final MFI</h2>
+
+        <div class="modal-section">
+          <h3>Description</h3>
+          <p>
+            Développement d'une canne intelligente
+            destinée aux personnes malvoyantes.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Documents</h3>
+
+          <a href="rapport-mfi.pdf" class="btn btn-terra">
+            📄 Rapport
+          </a>
+
+          <a href="presentation-mfi.pdf" class="btn btn-outline">
+            📊 Présentation
+          </a>
+        </div>
+
+      </div>
+    `;
+  }
+
+  else if(project === 'innovation'){
+
+    body.innerHTML = `
+      <div class="modal-body">
+
+        <h2>Innovation Lycée</h2>
+
+        <div class="modal-section">
+          <h3>Description</h3>
+          <p>
+            Développement d'un sac intelligent de
+            distanciation sociale intégrant des
+            capteurs de proximité.
+          </p>
+        </div>
+
+      </div>
+    `;
+  }
+
+  modal.style.display = "block";
+}
+
+function closeModal(){
+  document.getElementById('projectModal').style.display = "none";
+}
